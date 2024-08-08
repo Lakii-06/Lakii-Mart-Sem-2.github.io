@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lakii Mart</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="./order.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<header>
+    <section>
+        <ul id="upper-part">
+            <li><a href="./order.html"> <i class="fa-solid fa-cart-plus"></i> Order</a></li>
+            <li><a href="./myaccount.html"> <i class="fa-solid fa-person"></i> My Account </a></li>
+            <li><a href="./about%20us.html"> <i class="fa-solid fa-location-dot"> </i> Stores</a></li>
+        </ul>
+  
+        <section class="logo">
+            <img src="./images/lakii%20mart.png" alt="Lakii-Mart logo"> 
+        </section>
+  
+        <section id="search-section">
+          <section class="search-container">
+              <label for="site-search" class="sr-only">Search the site</label>
+              <input type="text" id="site-search" placeholder="Search..." aria-label="Search input">
+              <a href="#" aria-label="Search button"></a>
+              <i class="fas fa-search" aria-label="Search icon"></i>
+          </section>
+      </section>
+      
+         
+        <nav id="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./products.html">Products</a>
+            <a href="./about%20us.html">About Us</a>
+            <a href="./order.html">Order</a>
+            <a href="./loyalty%20registration.html">Loyalty registration</a>
+        </nav>
+  
+    </section>
+</header>
+
+<body>
+ 
+    <section class="fruits">
+        <h1>Fruits</h1>       
+        <section class="item-container">
+            <section class="item" id="i1"  aria-labelledby="apple-heading">
+                <img src="./images/apple.jpeg" alt="Apple" aria-label="Apple">
+                <h2 id="apple-heading">Apple (kg):</h2>
+                <p><b>Rs.950/=</b></p>
+                <input type="number" min="0" id="apple-qty" placeholder="Quantity" aria-label="Quantity of Apple">
+                <button onclick="addItem('Apple', 950, 'apple-qty')" aria-label="Add Apple to cart">Add to Cart</button>
+            </section>
+            <section class="item" id="i2"  aria-labelledby="banana-heading">
+                <img src="./images/banana.jpg" alt="Banana" aria-label="Banana">
+                <h2 id="banana-heading">Banana (kg):</h2>
+                <p><b>Rs.400/=</b></p>
+                <input type="number" min="0" id="banana-qty" placeholder="Quantity" aria-label="Quantity of Banana">
+                <button onclick="addItem('Banana', 400, 'banana-qty')" aria-label="Add Banana to cart">Add to Cart</button>
+            </section>
+            <section class="item" id="i3"  aria-labelledby="orange-heading">
+                <img src="./images/orange.jpg" alt="Orange" aria-label="Orange">
+                <h2 id="orange-heading">Orange (kg):</h2>
+                <p><b>Rs.750/=</b></p>
+                <input type="number" min="0" id="orange-qty" placeholder="Quantity" aria-label="Quantity of Orange">
+                <button onclick="addItem('Orange', 750, 'orange-qty')" aria-label="Add Orange to cart">Add to Cart</button>
+            </section>
+            <section class="item" id="i4"  aria-labelledby="mango-heading">
+                <img src="./images/mango.jpg" alt="Mango" aria-label="Mango">
+                <h2 id="mango-heading">Mango (kg):</h2>
+                <p><b>Rs.1400/=</b></p>
+                <input type="number" min="0" id="mango-qty" placeholder="Quantity" aria-label="Quantity of Mango">
+                <button onclick="addItem('Mango', 1400, 'mango-qty')" aria-label="Add Mango to cart">Add to Cart</button>
+            </section>
+            <section class="item" id="i5"  aria-labelledby="grape-heading">
+                <img src="./images/grapes.jpg" alt="Grapes" aria-label="Grapes">
+                <h2 id="grape-heading">Grapes (kg):</h2>
+                <p><b>Rs.930/=</b></p>
+                <input type="number" min="0" id="grape-qty" placeholder="Quantity" aria-label="Quantity of Grapes">
+                <button onclick="addItem('Grapes', 930, 'grape-qty')" aria-label="Add Grapes to cart">Add to Cart</button>
+            </section>
+            <section class="item" id="i6"  aria-labelledby="pineapple-heading">
+                <img src="./images/pineapple.jpg" alt="Pineapple" aria-label="Pineapple">
+                <h2 id="pineapple-heading">Pineapple (kg):</h2>
+                <p><b>Rs.900/=</b></p>
+                <input type="number" min="0" id="pineapple-qty" placeholder="Quantity" aria-label="Quantity of Pineapple">
+                <button onclick="addItem('Pineapple', 900, 'pineapple-qty')" aria-label="Add Pineapple to cart">Add to Cart</button>
+            </section>
+            <section class="item" id="i7"  aria-labelledby="strawberry-heading">
+                <img src="./images/strawberry.jpg" alt="Strawberry" aria-label="Strawberry">
+                <h2 id="strawberry-heading">Strawberry (kg):</h2>
+                <p><b>Rs.545/=</b></p>
+                <input type="number" min="0" id="strawberry-qty" placeholder="Quantity" aria-label="Quantity of Strawberry">
+                <button onclick="addItem('Strawberry', 545, 'strawberry-qty')" aria-label="Add Strawberry to cart">Add to Cart</button>
+            </section>
+            <section class="item" id="i8"  aria-labelledby="watermelon-heading">
+                <img src="./images/watermelon.jpg" alt="Watermelon" aria-label="Watermelon">
+                <h2 id="watermelon-heading">Watermelon (kg):</h2>
+                <p><b>Rs.235/=</b></p>
+                <input type="number" min="0" id="watermelon-qty" placeholder="Quantity" aria-label="Quantity of Watermelon">
+                <button onclick="addItem('Watermelon', 235, 'watermelon-qty')" aria-label="Add Watermelon to cart">Add to Cart</button>
+            </section>
+        </section>
+    </section>
+    
+   
+<br>
+
+<section class="vegetables">
+    <h1>Vegetables</h1>
+    <section class="item-container">
+        <section class="item" id="i9"  aria-labelledby="beetroot-heading">
+            <img src="./images/beetroot.jpg" alt="Beetroot" aria-label="Beetroot">
+            <h2 id="beetroot-heading">Beetroot (kg):</h2>
+            <p><b>Rs.525/=</b></p>
+            <input type="number" min="0" id="beetroot-qty" placeholder="Quantity" aria-label="Quantity of Beetroot">
+            <button onclick="addItem('Beetroot', 525, 'beetroot-qty')" aria-label="Add Beetroot to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i10"  aria-labelledby="bittergourd-heading">
+            <img src="./images/bittergourd.jpg" alt="Bittergourd" aria-label="Bittergourd">
+            <h2 id="bittergourd-heading">Bittergourd (kg):</h2>
+            <p><b>Rs.415/=</b></p>
+            <input type="number" min="0" id="bittergourd-qty" placeholder="Quantity" aria-label="Quantity of Bittergourd">
+            <button onclick="addItem('Bittergourd', 415, 'bittergourd-qty')" aria-label="Add Bittergourd to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i11"  aria-labelledby="brinjal-heading">
+            <img src="./images/brinjal.jpg" alt="Brinjal" aria-label="Brinjal">
+            <h2 id="brinjal-heading">Brinjal (kg):</h2>
+            <p><b>Rs.320/=</b></p>
+            <input type="number" min="0" id="brinjal-qty" placeholder="Quantity" aria-label="Quantity of Brinjal">
+            <button onclick="addItem('Brinjal', 320, 'brinjal-qty')" aria-label="Add Brinjal to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i12"  aria-labelledby="broccoli-heading">
+            <img src="./images/broccoli.jpg" alt="Broccoli" aria-label="Broccoli">
+            <h2 id="broccoli-heading">Broccoli (kg):</h2>
+            <p><b>Rs.425/=</b></p>
+            <input type="number" min="0" id="broccoli-qty" placeholder="Quantity" aria-label="Quantity of Broccoli">
+            <button onclick="addItem('Broccoli', 425, 'broccoli-qty')" aria-label="Add Broccoli to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i13"  aria-labelledby="cabbage-heading">
+            <img src="./images/cabbage.jpeg" alt="Cabbage" aria-label="Cabbage">
+            <h2 id="cabbage-heading">Cabbage (kg):</h2>
+            <p><b>Rs.243/=</b></p>
+            <input type="number" min="0" id="cabbage-qty" placeholder="Quantity" aria-label="Quantity of Cabbage">
+            <button onclick="addItem('Cabbage', 243, 'cabbage-qty')" aria-label="Add Cabbage to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i14"  aria-labelledby="cauliflower-heading">
+            <img src="./images/cauliflower.jpg" alt="Cauliflower" aria-label="Cauliflower">
+            <h2 id="cauliflower-heading">Cauliflower (kg):</h2>
+            <p><b>Rs.425/=</b></p>
+            <input type="number" min="0" id="cauliflower-qty" placeholder="Quantity" aria-label="Quantity of Cauliflower">
+            <button onclick="addItem('Cauliflower', 425, 'cauliflower-qty')" aria-label="Add Cauliflower to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i15"  aria-labelledby="celery-heading">
+            <img src="./images/celery.jpeg" alt="Celery" aria-label="Celery">
+            <h2 id="celery-heading">Celery (kg):</h2>
+            <p><b>Rs.500/=</b></p>
+            <input type="number" min="0" id="celery-qty" placeholder="Quantity" aria-label="Quantity of Celery">
+            <button onclick="addItem('Celery', 500, 'celery-qty')" aria-label="Add Celery to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i16"  aria-labelledby="garlic-heading">
+            <img src="./images/garlic.jpg" alt="Garlic" aria-label="Garlic">
+            <h2 id="garlic-heading">Garlic (kg):</h2>
+            <p><b>Rs.300/=</b></p>
+            <input type="number" min="0" id="garlic-qty" placeholder="Quantity" aria-label="Quantity of Garlic">
+            <button onclick="addItem('Garlic', 300, 'garlic-qty')" aria-label="Add Garlic to cart">Add to Cart</button>
+        </section>
+    </section>
+</section>
+
+
+<br>
+
+<section class="dairy_produce">
+    <h1>Dairy Produce</h1>
+    <section class="item-container">
+        <section class="item" id="i17"  aria-labelledby="milk-heading">
+            <img src="./images/milk.jpeg" alt="Milk" aria-label="Milk">
+            <h2 id="milk-heading">Milk (quantity):</h2>
+            <p><b>Rs.515/=</b></p>
+            <input type="number" min="0" id="milk-qty" placeholder="Quantity" aria-label="Quantity of Milk">
+            <button onclick="addItem('Milk', 515, 'milk-qty')" aria-label="Add Milk to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i18"  aria-labelledby="cheese-heading">
+            <img src="./images/cheese.jpg" alt="Cheese" aria-label="Cheese">
+            <h2 id="cheese-heading">Cheese (quantity):</h2>
+            <p><b>Rs.1200/=</b></p>
+            <input type="number" min="0" id="cheese-qty" placeholder="Quantity" aria-label="Quantity of Cheese">
+            <button onclick="addItem('Cheese', 1200, 'cheese-qty')" aria-label="Add Cheese to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i19"  aria-labelledby="yogurt-heading">
+            <img src="./images/yogurt.jpg" alt="Yogurt" aria-label="Yogurt">
+            <h2 id="yogurt-heading">Yogurt (quantity):</h2>
+            <p><b>Rs.150/=</b></p>
+            <input type="number" min="0" id="yogurt-qty" placeholder="Quantity" aria-label="Quantity of Yogurt">
+            <button onclick="addItem('Yogurt', 150, 'yogurt-qty')" aria-label="Add Yogurt to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i20"  aria-labelledby="butter-heading">
+            <img src="./images/butter.jpg" alt="Butter" aria-label="Butter">
+            <h2 id="butter-heading">Butter (quantity):</h2>
+            <p><b>Rs.652/=</b></p>
+            <input type="number" min="0" id="butter-qty" placeholder="Quantity" aria-label="Quantity of Butter">
+            <button onclick="addItem('Butter', 652, 'butter-qty')" aria-label="Add Butter to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i21"  aria-labelledby="cream-heading">
+            <img src="./images/cream.jpg" alt="Cream" aria-label="Cream">
+            <h2 id="cream-heading">Cream (quantity):</h2>
+            <p><b>Rs.320/=</b></p>
+            <input type="number" min="0" id="cream-qty" placeholder="Quantity" aria-label="Quantity of Cream">
+            <button onclick="addItem('Cream', 320, 'cream-qty')" aria-label="Add Cream to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i22"  aria-labelledby="cornetto-heading">
+            <img src="./images/icecream.jpeg" alt="Cornetto" aria-label="Cornetto Ice Cream">
+            <h2 id="cornetto-heading">Cornetto (quantity):</h2>
+            <p><b>Rs.700/=</b></p>
+            <input type="number" min="0" id="cornetto-qty" placeholder="Quantity" aria-label="Quantity of Cornetto">
+            <button onclick="addItem('Cornetto', 700, 'cornetto-qty')" aria-label="Add Cornetto to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i23"  aria-labelledby="cottagecheese-heading">
+            <img src="./images/cottage%20cheese.jpg" alt="Cottage Cheese" aria-label="Cottage Cheese">
+            <h2 id="cottagecheese-heading">Cottage Cheese (quantity):</h2>
+            <p><b>Rs.750/=</b></p>
+            <input type="number" min="0" id="cottagecheese-qty" placeholder="Quantity" aria-label="Quantity of Cottage Cheese">
+            <button onclick="addItem('Cottage Cheese', 750, 'cottagecheese-qty')" aria-label="Add Cottage Cheese to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i24"  aria-labelledby="kefir-heading">
+            <img src="./images/kefir.jpeg" alt="Kefir" aria-label="Kefir">
+            <h2 id="kefir-heading">Kefir (quantity):</h2>
+            <p><b>Rs.300/=</b></p>
+            <input type="number" min="0" id="kefir-qty" placeholder="Quantity" aria-label="Quantity of Kefir">
+            <button onclick="addItem('Kefir', 300, 'kefir-qty')" aria-label="Add Kefir to cart">Add to Cart</button>
+        </section>
+    </section>
+</section>
+
+  <br>
+
+  <section class="meat_seafood">
+    <h1>Meat and Seafood</h1>
+    <section class="item-container">
+        <section class="item" id="i25"  aria-labelledby="chicken-heading">
+            <img src="./images/chicken.jpg" alt="Chicken" aria-label="Chicken">
+            <h2 id="chicken-heading">Chicken (kg):</h2>
+            <p><b>Rs.1100/=</b></p>
+            <input type="number" min="0" id="chicken-qty" placeholder="Quantity" aria-label="Quantity of Chicken">
+            <button onclick="addItem('Chicken', 1100, 'chicken-qty')" aria-label="Add Chicken to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i26"  aria-labelledby="beef-heading">
+            <img src="./images/beef.jpg" alt="Beef" aria-label="Beef">
+            <h2 id="beef-heading">Beef (kg):</h2>
+            <p><b>Rs.1400/=</b></p>
+            <input type="number" min="0" id="beef-qty" placeholder="Quantity" aria-label="Quantity of Beef">
+            <button onclick="addItem('Beef', 1400, 'beef-qty')" aria-label="Add Beef to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i27"  aria-labelledby="pork-heading">
+            <img src="./images/pork.jpg" alt="Pork" aria-label="Pork">
+            <h2 id="pork-heading">Pork (kg):</h2>
+            <p><b>Rs.1300/=</b></p>
+            <input type="number" min="0" id="pork-qty" placeholder="Quantity" aria-label="Quantity of Pork">
+            <button onclick="addItem('Pork', 1300, 'pork-qty')" aria-label="Add Pork to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i28"  aria-labelledby="lamb-heading">
+            <img src="./images/lamb.jpg" alt="Lamb" aria-label="Lamb">
+            <h2 id="lamb-heading">Lamb (kg):</h2>
+            <p><b>Rs.2000/=</b></p>
+            <input type="number" min="0" id="lamb-qty" placeholder="Quantity" aria-label="Quantity of Lamb">
+            <button onclick="addItem('Lamb', 2000, 'lamb-qty')" aria-label="Add Lamb to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i29"  aria-labelledby="salmon-heading">
+            <img src="./images/salmon.jpg" alt="Salmon" aria-label="Salmon">
+            <h2 id="salmon-heading">Salmon (kg):</h2>
+            <p><b>Rs.800/=</b></p>
+            <input type="number" min="0" id="salmon-qty" placeholder="Quantity" aria-label="Quantity of Salmon">
+            <button onclick="addItem('Salmon', 800, 'salmon-qty')" aria-label="Add Salmon to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i30"  aria-labelledby="shrimp-heading">
+            <img src="./images/shrimp.jpg" alt="Shrimp" aria-label="Shrimp">
+            <h2 id="shrimp-heading">Shrimp (kg):</h2>
+            <p><b>Rs.1500/=</b></p>
+            <input type="number" min="0" id="shrimp-qty" placeholder="Quantity" aria-label="Quantity of Shrimp">
+            <button onclick="addItem('Shrimp', 1500, 'shrimp-qty')" aria-label="Add Shrimp to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i31"  aria-labelledby="tuna-heading">
+            <img src="./images/tuna.jpg" alt="Tuna" aria-label="Tuna">
+            <h2 id="tuna-heading">Tuna (kg):</h2>
+            <p><b>Rs.1300/=</b></p>
+            <input type="number" min="0" id="tuna-qty" placeholder="Quantity" aria-label="Quantity of Tuna">
+            <button onclick="addItem('Tuna', 1300, 'tuna-qty')" aria-label="Add Tuna to cart">Add to Cart</button>
+        </section>
+        <section class="item" id="i32"  aria-labelledby="crab-heading">
+            <img src="./images/crab.jpg" alt="Crab" aria-label="Crab">
+            <h2 id="crab-heading">Crab (kg):</h2>
+            <p><b>Rs.1600/=</b></p>
+            <input type="number" min="0" id="crab-qty" placeholder="Quantity" aria-label="Quantity of Crab">
+            <button onclick="addItem('Crab', 1600, 'crab-qty')" aria-label="Add Crab to cart">Add to Cart</button>
+        </section>
+    </section>
+</section>
+
+
+<br>
+
+<section class="baking_cooking_ingredients">
+    <h1>Baking and Cooking Ingredients</h1>
+    <section class="item-container">
+      <section class="item" id="i33"  aria-labelledby="flour-heading">
+        <img src="./images/flour.jpg" alt="Flour" aria-label="Flour">
+        <h2 id="flour-heading">Flour (quantity):</h2>
+        <p><b>Rs.400/=</b></p>
+        <input type="number" min="0" id="flour-qty" placeholder="Quantity" aria-label="Quantity of Flour">
+        <button onclick="addItem('Flour', 400, 'flour-qty')" aria-label="Add Flour to cart">Add to Cart</button>
+      </section>
+      <section class="item" id="i34"  aria-labelledby="sugar-heading">
+        <img src="./images/sugar.jpg" alt="Sugar" aria-label="Sugar">
+        <h2 id="sugar-heading">Sugar (quantity):</h2>
+        <p><b>Rs.335/=</b></p>
+        <input type="number" min="0" id="sugar-qty" placeholder="Quantity" aria-label="Quantity of Sugar">
+        <button onclick="addItem('Sugar', 335, 'sugar-qty')" aria-label="Add Sugar to cart">Add to Cart</button>
+      </section>
+      <section class="item" id="i35"  aria-labelledby="salt-heading">
+        <img src="./images/salt.jpg" alt="Salt" aria-label="Salt">
+        <h2 id="salt-heading">Salt (quantity):</h2>
+        <p><b>Rs.140/=</b></p>
+        <input type="number" min="0" id="salt-qty" placeholder="Quantity" aria-label="Quantity of Salt">
+        <button onclick="addItem('Salt', 140, 'salt-qty')" aria-label="Add Salt to cart">Add to Cart</button>
+      </section>
+      <section class="item" id="i36"  aria-labelledby="bakingpowder-heading">
+        <img src="./images/baking%20powder.jpeg" alt="Baking powder" aria-label="Baking powder">
+        <h2 id="bakingpowder-heading">Baking powder (quantity):</h2>
+        <p><b>Rs.2350/=</b></p>
+        <input type="number" min="0" id="bakingpowder-qty" placeholder="Quantity" aria-label="Quantity of Baking powder">
+        <button onclick="addItem('Baking powder', 2350, 'bakingpowder-qty')" aria-label="Add Baking powder to cart">Add to Cart</button>
+      </section>
+      <section class="item" id="i37"  aria-labelledby="oliveoil-heading">
+        <img src="./images/olive%20oil.jpg" alt="Olive oil" aria-label="Olive oil">
+        <h2 id="oliveoil-heading">Olive oil (quantity):</h2>
+        <p><b>Rs.600/=</b></p>
+        <input type="number" min="0" id="oliveoil-qty" placeholder="Quantity" aria-label="Quantity of Olive oil">
+        <button onclick="addItem('Olive oil', 600, 'oliveoil-qty')" aria-label="Add Olive oil to cart">Add to Cart</button>
+      </section>
+      <section class="item" id="i38"  aria-labelledby="vanillaextract-heading">
+        <img src="./images/vanilla%20extract.jpeg" alt="Vanilla extract" aria-label="Vanilla extract">
+        <h2 id="vanillaextract-heading">Vanilla extract (quantity):</h2>
+        <p><b>Rs.800/=</b></p>
+        <input type="number" min="0" id="vanillaextract-qty" placeholder="Quantity" aria-label="Quantity of Vanilla extract">
+        <button onclick="addItem('Vanilla extract', 800, 'vanillaextract-qty')" aria-label="Add Vanilla extract to cart">Add to Cart</button>
+      </section>
+      <section class="item" id="i39"  aria-labelledby="yeast-heading">
+        <img src="./images/yeast.jpg" alt="Yeast" aria-label="Yeast">
+        <h2 id="yeast-heading">Yeast (quantity):</h2>
+        <p><b>Rs.450/=</b></p>
+        <input type="number" min="0" id="yeast-qty" placeholder="Quantity" aria-label="Quantity of Yeast">
+        <button onclick="addItem('Yeast', 450, 'yeast-qty')" aria-label="Add Yeast to cart">Add to Cart</button>
+      </section>
+      <section class="item" id="i40"  aria-labelledby="bakingsoda-heading">
+        <img src="./images/baking%20soda.jpeg" alt="Baking soda" aria-label="Baking soda">
+        <h2 id="bakingsoda-heading">Baking soda (quantity):</h2>
+        <p><b>Rs.300/=</b></p>
+        <input type="number" min="0" id="bakingsoda-qty" placeholder="Quantity" aria-label="Quantity of Baking soda">
+        <button onclick="addItem('Baking soda', 300, 'bakingsoda-qty')" aria-label="Add Baking soda to cart">Add to Cart</button>
+      </section>
+    </section>
+  </section>
+  
+
+<section id="c-text">
+    <p>Cart</p>
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <p id="total-price"></p>
+    
+    <button id="save-favourite" onclick="saveFavorite()">Add to Favourites</button>
+    <button id="apply-favourite" onclick="applyFavorite()">Apply Favourites</button>
+    <a href="./checkout.html"><button id="buy-now">Buy Now</button></a>
+
+
+</section>
+
+    <script src="order.js"></script>
+
+    <br>
+    
+
+
+
+
+
+
+    <footer class="footer">
+        <section class="container">
+          <section class="row">
+            <section class="footer-col">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./about%20us.html">About Us</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a href="./loyalty%20registration.html">Loyalty Registration</a></li>
+              </ul>
+            </section>
+            <section class="footer-col">
+              <h3>Products</h3>
+              <ul>
+                <li><a href="./dairy%20products.html">Dairy products</a></li>
+                <li><a href="./vegetables.html">Vegetables</a></li>
+                <li><a href="./cosmetics.html">Cosmetics & Skin care</a></li>
+              </ul>
+            </section>
+            <section class="footer-col">
+              <h3>Follow us</h3>
+              <section class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
+              </section>
+            </section>
+          </section>
+        </section>
+      </footer>
+        <section id="footerdata">
+            <p>Copyright © 2024; Designed by Lakdinu Weragama</p>
+        </section>
+        
+           
+      
+      
+      
+      
+</body>
+</html>
