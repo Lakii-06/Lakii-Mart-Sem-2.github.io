@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.fruits h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.vegetables h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.dairy_produce h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.meat_seafood h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.baking_cooking_ingredients h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+
+
+
+
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.item:hover {
+    background-color: #f9f9f9;
+    border-color: darkgreen;
+    border-width: 5px;
+    transition: all 0.2s ease;
+    transform: scale(1.05);
+  }
+
+
+.item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.item input, .item button {
+    margin-top: 10px;
+}
+
+
+.item button {
+
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 35px;
+    margin-top: 20px;
+}
+
+.item button:hover{
+    background-color: #4CAF50;
+}
+
+
+.item p{
+    margin: 5px 0;
+    font-style: normal;
+    font-weight: 200;
+    font-size: large;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .item-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); 
+    }
+}
+
+#cart-table{
+    font-family: sans-serif;
+    width:100%;
+    border:1px solid darkgreen;
+    border-collapse: collapse;
+    
+
+}
+
+#cart-table th{
+    background-color:darkgreen;
+    color:#fff;        
+    border:1px solid #ccc;
+    padding:6px 12px;
+    border-bottom: 5px #4CAF50;
+
+}
+
+#cart-table td{
+    border:1px solid darkgreen;
+    padding:6px 12px;
+}
+
+
+#cart-table td:last-child{
+    text-align: center;
+}
+
+#cart-table td button{
+    visibility: visible;
+    border:none;
+    height:40px;
+    width:100px;
+    padding:3px;
+    border-radius: 35px;
+    color:#fff;
+    background-color:olivedrab;
+}
+
+.cart-table td.cart_total_cell {
+    visibility: hidden;
+}
+
+#save-favourite , #apply-favourite, #buy-now{
+    background-color: darkgreen;
+    font-size: large;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    
+}
+
+#save-favourite:hover{
+    background-color: #4CAF50;
+}
+
+#apply-favourite:hover{
+    background-color: #4CAF50;
+}
+
+#buy-now:hover{
+    background-color: #4CAF50;
+}
+
+
+
+#c-text p{
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: solid;
+}
+
+
+
+#apple-qty{
+    width:180px;
+}
+
+#banana-qty{
+    width:180px;
+}
+
+#orange-qty{
+    width:180px;
+}
+
+#mango-qty{
+    width:180px;
+}
+
+#grape-qty{
+    width:180px;
+}
+
+#pineapple-qty{
+    width:180px;
+}
+
+#strawberry-qty{
+    width:180px;
+}
+
+#watermelon-qty{
+    width:180px;
+}
+
+#beetroot-qty{
+    width:180px;
+}
+
+#bittergourd-qty{
+    width:180px;
+}
+
+#brinjal-qty{
+    width:180px;
+}
+
+#broccoli-qty{
+    width:180px;
+}
+
+#cabbage-qty{
+    width:180px;
+}
+
+#cauliflower-qty{
+    width:180px;
+}
+
+#celery-qty{
+    width:180px;
+}
+
+#garlic-qty{
+    width:180px;
+}
+
+#milk-qty{
+    width:180px;
+}
+
+#cheese-qty{
+    width:180px;
+}
+
+#yogurt-qty{
+    width:180px;
+}
+
+#butter-qty{
+    width:180px;
+}
+
+#cream-qty{
+    width:180px;
+}
+
+#cornetto-qty{
+    width:180px;
+}
+
+#cottagecheese-qty{
+    width:180px;
+}
+
+#kefir-qty{
+    width:180px;
+}
+
+#chicken-qty{
+    width:180px;
+}
+
+#beef-qty{
+    width:180px;
+}
+
+#pork-qty{
+    width:180px;
+}
+
+#lamb-qty{
+    width:180px;
+}
+
+#salmon-qty{
+    width:180px;
+}
+
+#shrimp-qty{
+    width:180px;
+}
+
+#tuna-qty{
+    width:180px;
+}
+
+#crab-qty{
+    width:180px;
+}
+
+#flour-qty{
+    width:180px;
+}
+
+#sugar-qty{
+    width:180px;
+}
+
+#salt-qty{
+    width:180px;
+}
+
+#bakingpowder-qty{
+    width:180px;
+}
+
+#oliveoil-qty{
+    width:180px;
+}
+
+#vanillaextract-qty{
+    width:180px;
+}
+
+#yeast-qty{
+    width:180px;
+}
+
+#bakingsoda-qty{
+    width:180px;
+}
+
+

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+div#cart_output{    
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh;
+  background-color: rgb(255, 255, 255);
+  font-size:120%;
+  font-weight: bold;  
+  color:#096e09;
+}
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+}
+
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background-color: rgb(255, 255, 255);
+ 
+}
+
+
+.form-container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid green;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.form-container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.form-container form .row .col{
+  flex:1 1 250px;
+}
+
+.form-container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.form-container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.form-container form .row .col .inputBox span{
+
+  display: block;
+}
+
+.form-container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.form-container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.form-container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.form-container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.form-container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.form-container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #096e09;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.form-container form .submit-btn:hover{
+  background: #51ac37;
+}
+
+
+.logo img{
+  margin: left;
+  margin-top: 10px;
+  padding: 15px;
+  list-style: none;
+  height:100px;
+  width:280px;   
+      
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height:30px;
+    background-color: #51ac37;
+    padding: 8px;
+    border-radius: 35px;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    box-sizing: none;
+
+  }
+  
+
+  .search-container input {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 6px;
+
+  }
+
+  .search-container input::placeholder {
+     color: rgb(255, 255, 255); 
+   
+  }
+  
+  .search-container input  {
+    color: rgb(255, 255, 255);
+   
+  }
+
+
+  

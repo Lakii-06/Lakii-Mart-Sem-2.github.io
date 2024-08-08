@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lakii Mart</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="./checkout.css" rel="stylesheet" type="text/css">
+</head>
+
+<header>
+    <section>
+        <ul id="upper-part">
+            <li><a href="./order.html"> <i class="fa-solid fa-cart-plus"></i> Order</a></li>
+            <li><a href="./myaccount.html"> <i class="fa-solid fa-person"></i> My Account </a></li>
+            <li><a href="./about%20us.html"> <i class="fa-solid fa-location-dot"> </i> Stores</a></li>
+        </ul>
+  
+        <section class="logo">
+            <img src="./images/lakii%20mart.png" alt="Lakii-Mart logo"> 
+        </section>
+  
+        <section id="search-section">
+            <section class="search-container">
+                <label for="site-search" class="sr-only">Search the site</label>
+                <input type="text" id="site-search" placeholder="Search..." aria-label="Search input">
+                <a href="#" aria-label="Search button"></a>
+                <i class="fas fa-search" aria-label="Search icon"></i>
+            </section>
+        </section>
+
+        
+        <nav id="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./products.html">Products</a>
+            <a href="./about%20us.html">About Us</a>
+            <a href="./order.html">Order</a>
+            <a href="./loyalty%20registration.html">Loyalty registration</a>
+        </nav>
+  
+    </section>
+  </header>
+
+<body>
+
+
+    <div id="cart_output" aria-live="polite"></div>
+
+    <div class="form-container">
+    
+        <form action="f">
+    
+            <div class="row">
+    
+                <div class="col">
+    
+                    <h3 class="title">Billing Address</h3>
+    
+                    <div class="inputBox">
+                        <label for="full_name">Full Name:</label>
+                        <input type="text" id="full_name" placeholder="Lakdinu Weragama" aria-label="Full Name" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="example@example.com" aria-label="Email" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" placeholder="house no. - street - locality" aria-label="Address" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" placeholder="Colombo" aria-label="City" required>
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="province">Province:</label>
+                            <input type="text" id="province" placeholder="Western" aria-label="Province" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="zip_code">Zip Code:</label>
+                            <input type="text" id="zip_code" placeholder="20000" aria-label="Zip Code" required>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col">
+    
+                    <h3 class="title">Payment</h3>
+    
+                    <div class="inputBox">
+                        <span>Cards Accepted:</span>
+                        <img src="images/card_img.png" alt="Credit card types accepted">
+                    </div>
+                    <div class="inputBox">
+                        <label for="card_name">Name on Card:</label>
+                        <input type="text" id="card_name" placeholder="K.W.L.A.Weragama" aria-label="Name on Card" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="card_number">Credit Card Number:</label>
+                        <input type="text" id="card_number" placeholder="1111-2222-3333-4444" aria-label="Credit Card Number" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="exp_month">Expiration Month:</label>
+                        <input type="number" id="exp_month" placeholder="January" aria-label="Expiration Month" required>
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="exp_year">Expiration Year:</label>
+                            <input type="number" id="exp_year" placeholder="2024" aria-label="Expiration Year" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" placeholder="123" aria-label="CVV" required>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <input type="submit" value="Proceed to Checkout" class="submit-btn" aria-label="Proceed to Checkout">
+    
+        </form>
+    
+    </div>
+    
+
+    
+
+
+<script src="checkout.js" defer></script>
+    
+
+
+
+
+
+
+<footer class="footer">
+    <section class="container">
+      <section class="row">
+        <section class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about%20us.html">About Us</a></li>
+            <li><a href="./order.html">Order</a></li>
+            <li><a href="./loyalty%20registration.html">Loyalty Registration</a></li>
+          </ul>
+        </section>
+        <section class="footer-col">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="./dairy%20products.html">Dairy products</a></li>
+            <li><a href="./vegetables.html">Vegetables</a></li>
+            <li><a href="./cosmetics.html">Cosmetics & Skin care</a></li>
+          </ul>
+        </section>
+        <section class="footer-col">
+          <h3>Follow us</h3>
+          <section class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </section>
+        </section>
+      </section>
+    </section>
+  </footer>
+      <section id="footerdata">
+        <p>Copyright © 2024; Designed by Lakdinu Weragama</p>
+      </section>
+
+       
+  
+  
+  
+  
+</body> 
+</html>
