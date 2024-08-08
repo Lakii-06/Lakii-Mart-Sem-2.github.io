@@ -177,15 +177,9 @@ border-radius: 35px;
 
 
   #row1, #row2, #row3 {
-    @media (orientation: landscape) {
-      display: flex;
-    }
-    @media (orientation: portrait) {
-      display: block;
-    }
-    selector{
-      width:100%;
-    }
+    @media (orientation: landscape) { display: flex; }
+    @media (orientation: portrait) { display: block; }
+    selector { width:100%; }
   }
 
 
