@@ -87,7 +87,12 @@ function applyFavorite() {
     }
 }
 
-document.getElementById('buy-now').addEventListener('click', () => {
-    saveCartToLocalStorage();
-    window.location.href = 'checkout.html';  // Change this to your actual checkout page
+document.getElementById('buy-now').addEventListener('click', (event) => {
+    if (cart.length === 0) {
+        alert('Your cart is empty! Please add items to the cart before proceeding.');
+        event.preventDefault(); 
+    } else {
+        saveCartToLocalStorage();
+        window.location.href = 'checkout.html';  
+    }
 });
