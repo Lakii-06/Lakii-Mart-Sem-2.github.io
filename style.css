@@ -176,17 +176,21 @@ border-radius: 35px;
 
 
 
+#row1, #row2, #row3 {
+  width: 100%;
+}
+
+@media (orientation: landscape) {
   #row1, #row2, #row3 {
-    @media (orientation: landscape) {
       display: flex;
-    }
-    @media (orientation: portrait) {
-      display: block;
-    }
-    selector{
-      width:100%;
-    }
   }
+}
+
+@media (orientation: portrait) {
+  #row1, #row2, #row3 {
+      display: block;
+  }
+}
 
 
   #grid-tr > h1{
